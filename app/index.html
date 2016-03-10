@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en" ng-app="countriesApp">
+<head>
+	<meta charset="UTF-8">
+	<title>Countries and Capitals</title>
+
+	<link rel="stylesheet" href="http://yui.yahooapis.com/pure/0.6.0/pure-min.css">
+    <!--[if lte IE 8]>
+        <link rel="stylesheet" href="http://yui.yahooapis.com/pure/0.6.0/grids-responsive-old-ie-min.css">
+    <![endif]-->
+    <!--[if gt IE 8]><!-->
+  	<link rel="stylesheet" href="http://yui.yahooapis.com/pure/0.6.0/grids-responsive-min.css">
+    <!--<![endif]-->
+    <link rel="stylesheet" type="text/css" href="css/style.css">
+	<script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.4.5/angular.min.js"></script>
+	<script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.4.5/angular-animate.js"></script>
+	<script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.4.9/angular-messages.js"></script>
+  	<script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.4.9/angular-route.js"></script>
+	<script src="app.js"></script>
+
+</head>
+<body ng-controller="mainCtrl">
+	<div class="pure g">
+		<div class="main-content">
+			<div class="header-title">{{title}}</div>
+			<div ng-view class="view-animation"></div>
+		</div>
+	</div>
+</body>
+</html>

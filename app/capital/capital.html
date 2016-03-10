@@ -1,0 +1,21 @@
+<div class="countryName">{{country}}</div>
+<p>Population: {{population | number}}</p>
+<p>Area: {{area | number}} Sq Kilometers</p>
+<p>Capital: {{capital}}</p>
+<p>Population of Capital: {{capitalPopulation | number}}</p>
+<p>
+	Neighbors: 
+	<span ng-repeat="neighbor in neighborData"> 
+		<a href="#/countries/{{neighbor.countryCode}}"> {{neighbor.countryName}}, </a>
+	</span>
+</p>
+
+<img ng-src="http://www.geonames.org/img/country/250/{{upcaseCode}}.png" />
+
+
+<img width="300px" ng-src="http://www.geonames.org/flags/x/{{lowcaseCode}}.gif" />
+
+	<div class="padding1">
+		<a href="#/home" class="pure-button pure-button-primary">Home</a>
+		<a href="#/countries" class="pure-button pure-button-primary">Browse Countries</a>
+	</div>
